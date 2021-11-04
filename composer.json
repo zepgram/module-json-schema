@@ -1,0 +1,31 @@
+{
+  "name": "zepgram/module-json-schema",
+  "description": "Json Schema Validation for Magento 2",
+  "type": "magento2-module",
+  "version": "0.0.1",
+  "authors": [
+    {
+      "name": "Benjamin Calef",
+      "email": "zepgram@gmail.com"
+    }
+  ],
+  "require": {
+    "justinrainbow/json-schema": "~5.2.11",
+    "magento/framework": "^101.0.0|^102.0.0|^103.0.0"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Zepgram\\JsonSchema\\": ""
+    }
+  },
+  "license": "MIT",
+  "repositories": {
+    "repo.magento.com": {
+      "type": "composer",
+      "url": "https://repo.magento.com/"
+    }
+  }
+}

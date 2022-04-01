@@ -27,39 +27,14 @@ use Zepgram\JsonSchema\Exception\SchemaException;
 
 class Validator
 {
-    /** @var ValidatorLib */
-    private $validator;
-
-    /** @var Reader */
-    private $reader;
-
-    /** @var File */
-    private $driverFile;
-
-    /** @var SerializerInterface */
-    private $jsonSerializer;
-
-    /** @var string */
-    private $fileName;
-
-    /** @var string */
-    private $moduleName;
-
     public function __construct(
-        ValidatorLib $validator,
-        Reader $reader,
-        File $driverFile,
-        SerializerInterface $jsonSerializer,
-        string $fileName = null,
-        string $moduleName = null
-    ) {
-        $this->validator = $validator;
-        $this->reader = $reader;
-        $this->driverFile = $driverFile;
-        $this->jsonSerializer = $jsonSerializer;
-        $this->fileName = $fileName;
-        $this->moduleName = $moduleName;
-    }
+        private ValidatorLib $validator,
+        private Reader $reader,
+        private File $driverFile,
+        private SerializerInterface $jsonSerializer,
+        private ?string $fileName = null,
+        private ?string $moduleName = null
+    ) {}
 
     /**
      * @param string $data

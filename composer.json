@@ -2,7 +2,7 @@
   "name": "zepgram/module-json-schema",
   "description": "Json Schema Validation for Magento 2",
   "type": "magento2-module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "authors": [
     {
       "name": "Benjamin Calef",

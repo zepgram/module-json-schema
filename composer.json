@@ -10,7 +10,7 @@
     }
   ],
   "require": {
-    "justinrainbow/json-schema": "~5.2.11",
+    "justinrainbow/json-schema": "^5.2",
     "magento/framework": "^103.0.4"
   },
   "autoload": {
